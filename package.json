@@ -28,16 +28,9 @@
   "license": "BSD-2-Clause",
   "devDependencies": {
     "@osjs/dev-meta": "^2.1.0",
-    "html-webpack-plugin": "^5.5.0",
-    "source-map-loader": "^4.0.1",
-    "@babel/plugin-transform-optional-chaining": "^7.23.3",
-    "@babel/plugin-transform-object-rest-spread": "^7.23.3",
-    "@babel/plugin-transform-class-properties": "^7.23.3",
-    "@babel/plugin-transform-private-methods": "^7.23.3",
-    "@babel/plugin-transform-runtime": "^7.23.3",
-    "@babel/preset-env": "^7.23.3",
-    "eslint": "^8.56.0",
-    "stylelint": "^15.10.3"
+    "html-webpack-plugin": "^3.2.0",
+    "source-map-loader": "^0.2.4",
+    "webpack-cli": "^4.10.0"
   },
   "dependencies": {
     "@osjs/calculator-application": "^1.2.8",
@@ -78,7 +71,7 @@
     },
     "parserOptions": {
       "sourceType": "module",
-      "ecmaVersion": 2020
+      "ecmaVersion": 8
     },
     "extends": "@osjs/eslint-config"
   },
@@ -93,16 +86,7 @@
       ]
     ],
     "plugins": [
-      "@babel/plugin-transform-runtime",
-      "@babel/plugin-transform-optional-chaining",
-      "@babel/plugin-transform-object-rest-spread",
-      "@babel/plugin-transform-class-properties",
-      "@babel/plugin-transform-private-methods"
+      "@babel/plugin-transform-runtime"
     ]
-  },
-  "browserslist": [
-    "defaults",
-    "not IE 11",
-    "maintained node versions"
-  ]
+  }
 }
