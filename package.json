@@ -8,7 +8,7 @@
     "eslint": "eslint 'src/client/**/*.js' 'src/server/**/*.js'",
     "stylelint": "stylelint 'src/client/*.scss'",
     "serve": "node src/server/index.js",
-    "start": "node src/server/index.js",  // ✅ Added for Render compatibility
+    "start": "node src/server/index.js",
     "build:manifest": "osjs-cli package:discover",
     "package:discover": "osjs-cli package:discover",
     "package:create": "osjs-cli package:create",
